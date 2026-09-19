@@ -1,0 +1,156 @@
+---
+const nav = [
+  { label: 'Approach', href: '#approach' },
+  { label: 'Solutions', href: '#solutions' },
+  { label: 'How it works', href: '#how-it-works' },
+  { label: 'About', href: '#about' }
+];
+
+const steps = [
+  ['01', 'Discover', 'Identify one valuable business opportunity and define success.'],
+  ['02', 'Design', 'Shape the agent, actions, data, guardrails and human escalation.'],
+  ['03', 'Deploy', 'Pilot or move into production with a bounded, governed scope.'],
+  ['04', 'Prove', 'Measure adoption, acceptance and business impact.'],
+  ['05', 'Scale', 'Expand from one successful agent into a broader digital workforce.']
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="TelTech helps growing companies design, deploy and scale AI-powered digital workforces with Salesforce Agentforce." />
+    <meta name="theme-color" content="#0B2545" />
+    <title>TELTECH | Agentic Workforce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="TelTech home">
+        <span class="mark" aria-hidden="true"><span></span></span>
+        <span class="brand-copy">
+          <strong>TELTECH</strong>
+          <small>AGENTIC WORKFORCE</small>
+        </span>
+      </a>
+      <nav aria-label="Primary navigation">
+        {nav.map((item) => <a href={item.href}>{item.label}</a>)}
+      </nav>
+      <a class="header-cta" href="#contact">Start with one agent <span>↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-glow glow-one"></div>
+        <div class="hero-glow glow-two"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">AI-POWERED DIGITAL WORKFORCES</p>
+          <h1>Scale<br /><em>what matters.</em></h1>
+          <p class="hero-lead">Humans in the hat. AI Agents at work.</p>
+          <p class="hero-text">TelTech helps growing companies turn practical business opportunities into AI-powered digital workforces—built on Salesforce Agentforce and designed around measurable outcomes.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#contact">Start with one valuable agent <span>→</span></a>
+            <a class="button secondary" href="#how-it-works">See how it works</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Human-led agentic workforce visual">
+          <div class="orbit orbit-a"></div>
+          <div class="orbit orbit-b"></div>
+          <div class="node node-human"><span>Human</span><b>Direction</b></div>
+          <div class="node node-agent"><span>AI Agent</span><b>Execution</b></div>
+          <div class="node node-data"><span>Data</span><b>Context</b></div>
+          <div class="node node-action"><span>Actions</span><b>Impact</b></div>
+          <div class="path path-a"></div>
+          <div class="path path-b"></div>
+          <div class="visual-caption">PEOPLE SET THE DIRECTION.<br /><strong>AGENTS MAKE IT HAPPEN.</strong></div>
+        </div>
+      </section>
+
+      <section class="intro section">
+        <div>
+          <p class="eyebrow">THE TELTECH IDEA</p>
+          <h2>Build the workforce,<br /><em>not just the workflow.</em></h2>
+        </div>
+        <div class="intro-text">
+          <p>People set vision, priorities and business outcomes. Agents execute repeatable digital work at scale. TelTech connects the two with senior architecture, practical Agentforce delivery and governed interoperability.</p>
+          <a class="text-link" href="#approach">Explore the approach <span>→</span></a>
+        </div>
+      </section>
+
+      <section id="approach" class="section approach">
+        <div class="section-heading">
+          <p class="eyebrow">A PRACTICAL START</p>
+          <h2>One valuable agent.<br /><em>Then build from proof.</em></h2>
+          <p>Start focused. Get into production. Measure the result. Expand the digital workforce only when the first agent proves its value.</p>
+        </div>
+        <div class="feature-grid">
+          <article><span class="icon">⌁</span><h3>Senior expertise</h3><p>Architecture, governance and business design stay close to the work.</p></article>
+          <article><span class="icon">✦</span><h3>AI-native delivery</h3><p>Modern engineering tools amplify experienced consultants and shorten delivery cycles.</p></article>
+          <article><span class="icon">◌</span><h3>Practical outcomes</h3><p>Bounded agents, clear acceptance criteria and measurable production results.</p></article>
+        </div>
+      </section>
+
+      <section id="solutions" class="section solutions">
+        <div class="section-heading compact">
+          <p class="eyebrow">WHAT WE DO</p>
+          <h2>From opportunity<br /><em>to working agent.</em></h2>
+        </div>
+        <div class="solution-list">
+          <article><span>01</span><div><h3>Agent Discovery</h3><p>A focused 1–2 week engagement to define the business objective, agent architecture, actions, data, guardrails and production plan.</p></div><b>→</b></article>
+          <article><span>02</span><div><h3>Agentforce Deployment</h3><p>Standard or custom Agentforce agents, delivered as a bounded pilot or directly into production based on customer readiness.</p></div><b>→</b></article>
+          <article><span>03</span><div><h3>Agentic Interoperability</h3><p>Connect agents, actions, data and systems using governed patterns, including MCP and headless Salesforce capabilities where applicable.</p></div><b>→</b></article>
+          <article><span>04</span><div><h3>Workforce Expansion</h3><p>Use proven production agents as the foundation for the next valuable capability—without starting with a large transformation program.</p></div><b>→</b></article>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="section process">
+        <div class="section-heading">
+          <p class="eyebrow">THE TELTECH METHOD</p>
+          <h2>Discover. Design. Deploy.<br /><em>Prove. Scale.</em></h2>
+        </div>
+        <div class="steps">
+          {steps.map(([number, title, text]) => <div class="step"><span>{number}</span><h3>{title}</h3><p>{text}</p></div>)}
+        </div>
+      </section>
+
+      <section id="about" class="section human">
+        <div class="human-card">
+          <div class="hat">HUMANS<br />IN THE HAT.</div>
+          <div>
+            <p class="eyebrow">THE HUMAN DIFFERENTIATOR</p>
+            <h2>People lead the<br /><em>Agentic workforce.</em></h2>
+            <p>TelTech positions people as the leaders, architects and managers of an expanding digital workforce. Technology handles repeatable work; people retain direction, judgment, governance and responsibility.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section trust">
+        <p class="eyebrow">BUILT FOR GROWING COMPANIES</p>
+        <div class="trust-line"><span>Salesforce Agentforce</span><i>•</i><span>Data 360</span><i>•</i><span>AI-native engineering</span><i>•</i><span>English + Spanish</span></div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div>
+          <p class="eyebrow">READY TO START?</p>
+          <h2>Find the one agent<br /><em>worth building first.</em></h2>
+          <p>Tell us where your team spends time, where customers wait, or where work keeps repeating. We’ll help shape a practical first agent.</p>
+        </div>
+        <a class="button light" href="mailto:info@teltechsas.com">Start the conversation <span>→</span></a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-brand"><strong>TELTECH</strong><span>Agentic Workforce</span></div>
+      <p>Humans in the hat. AI Agents at work.</p>
+      <p>© 2026 TelTech. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
+
+<style>
+:root{--navy:#0B2545;--teal:#2A9D8F;--aqua:#7FD1C9;--sand:#F4E6D7;--slate:#687280;--off:#FAFAF8;--ink:#132238;--line:#dfe6e7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--off);color:var(--ink);font-family:Inter,system-ui,sans-serif}a{text-decoration:none;color:inherit}.site-header{height:78px;padding:0 5.5vw;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:20;background:rgba(250,250,248,.9);backdrop-filter:blur(14px);border-bottom:1px solid rgba(11,37,69,.07)}.brand{display:flex;align-items:center;gap:11px}.mark{width:31px;height:31px;position:relative;display:block}.mark:before,.mark:after,.mark span{content:"";position:absolute;border-radius:12px 3px 12px 3px;transform:skewX(-22deg)}.mark:before{width:21px;height:10px;left:1px;top:5px;background:linear-gradient(120deg,var(--teal),var(--aqua))}.mark:after{width:21px;height:10px;left:9px;top:15px;background:linear-gradient(120deg,var(--navy),var(--teal))}.mark span{width:8px;height:19px;left:12px;top:6px;background:var(--teal);opacity:.85}.brand-copy{display:flex;flex-direction:column;line-height:1}.brand-copy strong{font-size:19px;letter-spacing:.08em;color:var(--navy)}.brand-copy small{font-size:7px;letter-spacing:.22em;color:var(--slate);margin-top:5px}nav{display:flex;gap:30px;font-size:13px;color:#445467}nav a:hover{color:var(--teal)}.header-cta{font-size:12px;font-weight:700;color:var(--navy);border-bottom:1px solid var(--teal);padding:8px 0}.hero{min-height:calc(100vh - 78px);padding:8vh 7vw 10vh;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:5vw;position:relative;overflow:hidden;background:linear-gradient(115deg,#fbfcfa 25%,#f3f8f5 100%)}.hero-copy{position:relative;z-index:2;max-width:720px}.eyebrow{font-size:10px;letter-spacing:.2em;font-weight:700;color:var(--teal);margin:0 0 20px}.hero h1,h2{font-family:Lora,Georgia,serif;font-weight:700;letter-spacing:-.035em}.hero h1{font-size:clamp(58px,7.4vw,104px);line-height:.93;margin:0;color:var(--navy)}h1 em,h2 em{font-style:normal;color:var(--teal)}.hero-lead{font-family:Lora,Georgia,serif;font-size:clamp(24px,2.5vw,34px);color:var(--navy);margin:30px 0 15px}.hero-text{font-size:17px;line-height:1.7;color:#536273;max-width:640px}.hero-actions{display:flex;gap:14px;align-items:center;margin-top:32px}.button{display:inline-flex;align-items:center;gap:22px;border-radius:999px;padding:15px 21px;font-size:12px;font-weight:700}.button.primary{background:var(--navy);color:white;box-shadow:0 12px 30px rgba(11,37,69,.14)}.button.primary:hover{background:var(--teal)}.button.secondary{border:1px solid #cad5d7;color:var(--navy)}.hero-visual{height:min(600px,65vw);min-height:420px;position:relative;border-radius:50%;background:radial-gradient(circle at 50% 50%,rgba(127,209,201,.35),rgba(127,209,201,.08) 35%,transparent 64%)}.orbit{position:absolute;border:1px solid rgba(42,157,143,.25);border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-17deg)}.orbit-a{width:76%;height:42%}.orbit-b{width:52%;height:76%;transform:translate(-50%,-50%) rotate(35deg)}.node{position:absolute;display:flex;flex-direction:column;justify-content:center;text-align:center;width:116px;height:116px;border-radius:50%;background:rgba(250,250,248,.92);border:1px solid rgba(11,37,69,.11);box-shadow:0 18px 50px rgba(11,37,69,.1);font-size:11px;color:var(--slate)}.node span{font-weight:700;color:var(--navy);font-size:13px}.node b{font-weight:500;margin-top:5px}.node-human{left:8%;top:35%;border:2px solid var(--teal)}.node-agent{right:9%;top:23%;background:var(--navy);color:#bcd8d5}.node-agent span{color:white}.node-data{left:35%;bottom:5%}.node-action{right:18%;bottom:19%;background:var(--sand)}.path{position:absolute;height:1px;background:linear-gradient(90deg,transparent,var(--teal),transparent);transform-origin:left}.path-a{width:53%;left:25%;top:48%;transform:rotate(-24deg)}.path-b{width:48%;left:36%;top:57%;transform:rotate(35deg)}.visual-caption{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;font-size:9px;line-height:1.7;letter-spacing:.15em;color:var(--slate)}.visual-caption strong{color:var(--navy)}.section{padding:120px 7vw}.intro{display:grid;grid-template-columns:1.1fr .9fr;gap:9vw;align-items:end}.intro h2,.section-heading h2,.human h2,.contact h2{font-size:clamp(38px,4.5vw,65px);line-height:1.02;margin:0;color:var(--navy)}.intro-text{font-size:18px;line-height:1.8;color:#596978}.text-link{display:inline-flex;gap:12px;margin-top:18px;color:var(--navy);font-weight:700;font-size:13px}.approach{background:white}.section-heading{max-width:780px}.section-heading>p:last-child{font-size:17px;line-height:1.75;color:var(--slate);max-width:650px;margin-top:24px}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:65px}.feature-grid article{padding:35px;background:var(--off);border:1px solid var(--line);border-radius:22px}.icon{display:block;font-size:30px;color:var(--teal);margin-bottom:28px}.feature-grid h3{font-size:18px;margin:0 0 10px;color:var(--navy)}.feature-grid p{color:var(--slate);line-height:1.65;font-size:14px;margin:0}.solutions{background:#f5f7f5}.compact{max-width:650px}.solution-list{margin-top:55px;border-top:1px solid #cfd9d8}.solution-list article{display:grid;grid-template-columns:70px 1fr 30px;gap:20px;align-items:center;padding:30px 0;border-bottom:1px solid #cfd9d8}.solution-list article>span{font-size:11px;color:var(--teal);font-weight:700}.solution-list h3{margin:0 0 8px;color:var(--navy);font-size:22px}.solution-list p{margin:0;max-width:720px;color:var(--slate);font-size:14px;line-height:1.65}.solution-list b{color:var(--teal)}.process{background:var(--navy);color:white}.process .eyebrow{color:var(--aqua)}.process h2{color:white}.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;margin-top:65px;background:rgba(255,255,255,.16)}.step{padding:30px 25px;min-height:225px;background:var(--navy)}.step span{font-size:10px;color:var(--aqua);letter-spacing:.15em}.step h3{font-size:18px;margin:55px 0 12px}.step p{font-size:13px;line-height:1.6;color:#b7c6d0;margin:0}.human{background:var(--sand)}.human-card{display:grid;grid-template-columns:.75fr 1.25fr;gap:8vw;align-items:center;max-width:1100px;margin:auto}.hat{width:210px;height:150px;background:var(--navy);border-radius:50% 50% 18% 18%;display:flex;align-items:center;justify-content:center;text-align:center;color:white;font-family:Lora,serif;font-size:21px;line-height:1.05;box-shadow:0 20px 40px rgba(11,37,69,.15);transform:rotate(-5deg)}.human-card>div:last-child>p:last-child{font-size:17px;line-height:1.8;color:#596978;max-width:650px}.trust{padding-top:65px;padding-bottom:65px;text-align:center}.trust-line{display:flex;justify-content:center;flex-wrap:wrap;gap:18px;color:var(--navy);font-family:Lora,serif;font-size:21px}.trust-line i{font-family:Inter;color:var(--aqua)}.contact{padding:100px 7vw;display:flex;justify-content:space-between;gap:50px;align-items:end;background:linear-gradient(120deg,var(--teal),#238a80);color:white}.contact .eyebrow{color:#d6fffa}.contact h2{color:white}.contact>div{max-width:750px}.contact>div>p:last-child{line-height:1.7;max-width:600px;color:#e0f6f3;font-size:16px}.button.light{background:white;color:var(--navy);white-space:nowrap}.button.light:hover{background:var(--sand)}footer{background:#071b33;color:#b5c2cc;padding:35px 7vw;display:flex;align-items:center;justify-content:space-between;font-size:11px}footer p{margin:0}.footer-brand{display:flex;align-items:baseline;gap:12px;color:white}.footer-brand strong{font-size:18px;letter-spacing:.08em}.footer-brand span{color:#7fd1c9;letter-spacing:.08em;font-size:9px;text-transform:uppercase}@media(max-width:900px){nav{display:none}.hero,.intro,.human-card{grid-template-columns:1fr}.hero{padding-top:60px}.hero-visual{max-width:620px;width:100%;margin:0 auto}.feature-grid,.steps{grid-template-columns:1fr}.steps{background:transparent;gap:1px}.step{min-height:160px}.step h3{margin-top:30px}.contact{display:block}.contact .button{margin-top:25px}.site-header{padding:0 5vw}.header-cta{font-size:11px}.section{padding:85px 7vw}}@media(max-width:560px){.brand-copy small{display:none}.header-cta{display:none}.hero h1{font-size:58px}.hero-text{font-size:15px}.hero-actions{flex-direction:column;align-items:flex-start}.hero-visual{min-height:330px;height:330px}.node{width:88px;height:88px;font-size:9px}.node span{font-size:10px}.visual-caption{font-size:7px}.solution-list article{grid-template-columns:40px 1fr 20px}.solution-list h3{font-size:18px}.hat{width:170px;height:120px;font-size:17px;margin-bottom:30px}footer{flex-direction:column;align-items:flex-start;gap:12px}}
+</style>
