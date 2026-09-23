@@ -62,19 +62,73 @@ const steps = [
         </div>
       </div>
 
-      <div class="workforce-diagram" aria-label="Human leadership and Agentic execution diagram">
-        <div class="diagram-label top">HUMAN LEADERSHIP</div>
-        <div class="human-core"><strong>PEOPLE</strong><span>Strategy · Judgment · Priorities · Governance</span></div>
-        <div class="connector"></div>
-        <div class="agent-ring">
-          <div class="ring-title">AGENTIC WORKFORCE</div>
-          <div class="agent agent-one">Sales<br /><small>Agent</small></div>
-          <div class="agent agent-two">Service<br /><small>Agent</small></div>
-          <div class="agent agent-three">Knowledge<br /><small>Agent</small></div>
-          <div class="agent agent-four">Operations<br /><small>Agent</small></div>
-          <div class="agent-center">AI<br />AGENTS</div>
+      <div class="workforce-diagram" aria-label="Humans set the direction and AI Agents do the work">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="orbit orbit-c"></div>
+
+        <div class="orbit-node human-node">
+          <div class="node-art human-art">
+            <div class="human-silhouette">◒</div>
+          </div>
+          <strong>HUMANS</strong>
+          <span>Direction</span>
         </div>
-        <div class="diagram-result">BUSINESS EXECUTION<br /><strong>More capacity · Faster work · New possibilities</strong></div>
+
+        <div class="orbit-node agent-node">
+          <div class="node-art agent-art">
+            <svg viewBox="0 0 180 120" role="img" aria-label="Friendly AI Agents">
+              <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="63" y="24" width="58" height="48" rx="18" fill="#FAFAF8" stroke="#2A9D8F" stroke-width="3"/>
+                <circle cx="82" cy="47" r="5" fill="#2A9D8F" stroke="none"/>
+                <circle cx="102" cy="47" r="5" fill="#2A9D8F" stroke="none"/>
+                <path d="M82 59 Q92 66 102 59" stroke="#0B2545" stroke-width="3"/>
+                <path d="M92 24 V14" stroke="#2A9D8F" stroke-width="3"/>
+                <circle cx="92" cy="10" r="4" fill="#7FD1C9" stroke="none"/>
+                <path d="M63 39 L48 31 M121 39 L136 31" stroke="#7FD1C9" stroke-width="3"/>
+                <path d="M75 72 L68 94 M109 72 L116 94" stroke="#0B2545" stroke-width="4"/>
+                <path d="M67 94 H54 M117 94 H130" stroke="#2A9D8F" stroke-width="4"/>
+                <rect x="26" y="54" width="30" height="25" rx="9" fill="#FAFAF8" stroke="#7FD1C9" stroke-width="2"/>
+                <circle cx="36" cy="66" r="3" fill="#2A9D8F" stroke="none"/>
+                <circle cx="46" cy="66" r="3" fill="#2A9D8F" stroke="none"/>
+                <path d="M41 79 V88" stroke="#7FD1C9" stroke-width="2"/>
+                <rect x="124" y="50" width="30" height="25" rx="9" fill="#FAFAF8" stroke="#7FD1C9" stroke-width="2"/>
+                <circle cx="134" cy="62" r="3" fill="#2A9D8F" stroke="none"/>
+                <circle cx="144" cy="62" r="3" fill="#2A9D8F" stroke="none"/>
+                <path d="M139 75 V84" stroke="#7FD1C9" stroke-width="2"/>
+              </g>
+            </svg>
+          </div>
+          <strong>AI AGENTS</strong>
+          <span>Execution</span>
+        </div>
+
+        <div class="orbit-node data-node">
+          <div class="node-art data-art">
+            <svg viewBox="0 0 180 90" aria-hidden="true">
+              <path d="M10 58 C42 18 67 76 95 40 S140 25 170 50" fill="none" stroke="#7FD1C9" stroke-width="7" opacity=".65"/>
+              <path d="M10 68 C42 35 65 78 96 52 S140 38 170 62" fill="none" stroke="#2A9D8F" stroke-width="3"/>
+              <g fill="#0B2545" opacity=".55"><circle cx="30" cy="50" r="2"/><circle cx="48" cy="40" r="2"/><circle cx="73" cy="57" r="2"/><circle cx="112" cy="38" r="2"/><circle cx="143" cy="49" r="2"/></g>
+            </svg>
+          </div>
+          <strong>DATA</strong>
+          <span>Context</span>
+        </div>
+
+        <div class="orbit-node action-node">
+          <div class="node-art action-art">
+            <div class="action-path"></div>
+            <div class="action-sun"></div>
+          </div>
+          <strong>ACTIONS</strong>
+          <span>Impact</span>
+        </div>
+
+        <div class="diagram-message">
+          <div>HUMANS SET THE DIRECTION.</div>
+          <strong>AGENTS DO THE WORK.</strong>
+          <span>Humans in the hat. Agents at work.</span>
+        </div>
       </div>
     </section>
 
