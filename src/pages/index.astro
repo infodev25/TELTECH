@@ -62,76 +62,71 @@ const steps = [
         </div>
       </div>
 
-      <div class="workforce-diagram" aria-label="Humans set the direction and friendly AI Agents do the work">
-        <svg class="workforce-svg" viewBox="0 0 760 650" role="img" aria-label="Human direction, friendly AI Agents execution, data context and actions impact">
+      <div class="workforce-diagram" aria-label="TelTech Agentic Workforce diagram">
+        <svg class="workforce-svg" viewBox="0 0 1389 1132" role="img" aria-label="Humans set the direction. AI Agents do the work.">
           <defs>
-            <radialGradient id="wfGlow"><stop offset="0%" stop-color="#7FD1C9" stop-opacity=".25"/><stop offset="70%" stop-color="#7FD1C9" stop-opacity=".05"/><stop offset="100%" stop-color="#7FD1C9" stop-opacity="0"/></radialGradient>
-            <linearGradient id="wfHuman" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F8EFE5"/><stop offset="100%" stop-color="#EEF6F3"/></linearGradient>
-            <linearGradient id="wfAgent" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#E9F8F6"/><stop offset="100%" stop-color="#F8FBFA"/></linearGradient>
-            <linearGradient id="wfAction" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F8E9D8"/><stop offset="100%" stop-color="#F7F1E7"/></linearGradient>
+            <radialGradient id="glow"><stop offset="0" stop-color="#7FD1C9" stop-opacity=".23"/><stop offset=".72" stop-color="#7FD1C9" stop-opacity=".04"/><stop offset="1" stop-color="#7FD1C9" stop-opacity="0"/></radialGradient>
+            <linearGradient id="humanBg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FAFAF8"/><stop offset="1" stop-color="#EEF7F4"/></linearGradient>
+            <linearGradient id="agentBg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#EAF8F6"/><stop offset="1" stop-color="#FAFAF8"/></linearGradient>
+            <linearGradient id="actionBg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F4E6D7"/><stop offset="1" stop-color="#FAF2E8"/></linearGradient>
           </defs>
-          <ellipse cx="380" cy="325" rx="360" ry="235" fill="url(#wfGlow)"/>
-          <ellipse cx="380" cy="325" rx="325" ry="205" fill="none" stroke="#7FD1C9" stroke-opacity=".42"/>
-          <ellipse cx="380" cy="325" rx="360" ry="250" fill="none" stroke="#7FD1C9" stroke-opacity=".30" transform="rotate(27 380 325)"/>
-          <ellipse cx="380" cy="325" rx="285" ry="295" fill="none" stroke="#7FD1C9" stroke-opacity=".30" transform="rotate(65 380 325)"/>
-          
-          <!-- Human -->
-          <g transform="translate(22 220)">
-            <circle cx="95" cy="95" r="94" fill="url(#wfHuman)" stroke="#2A9D8F" stroke-width="2.5"/>
-            <circle cx="95" cy="63" r="28" fill="#0B2545"/>
-            <path d="M48 137 Q95 92 142 137 L142 154 L48 154Z" fill="#0B2545"/>
-            <path d="M63 64 Q95 37 127 64" fill="none" stroke="#2A9D8F" stroke-width="5" stroke-linecap="round"/>
-            <text x="95" y="181" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="#0B2545">HUMANS</text>
-            <text x="95" y="200" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#687280">Direction</text>
+          <ellipse cx="700" cy="560" rx="590" ry="330" fill="url(#glow)"/>
+          <ellipse cx="700" cy="560" rx="585" ry="320" fill="none" stroke="#7FD1C9" stroke-opacity=".42" stroke-width="2"/>
+          <ellipse cx="700" cy="560" rx="650" ry="390" fill="none" stroke="#7FD1C9" stroke-opacity=".30" stroke-width="2" transform="rotate(-20 700 560)"/>
+          <ellipse cx="700" cy="560" rx="455" ry="505" fill="none" stroke="#7FD1C9" stroke-opacity=".28" stroke-width="2" transform="rotate(62 700 560)"/>
+
+          <!-- Human / Direction -->
+          <g transform="translate(45 345)">
+            <circle cx="115" cy="115" r="113" fill="url(#humanBg)" stroke="#2A9D8F" stroke-width="4"/>
+            <text x="115" y="107" text-anchor="middle" font-family="Inter,sans-serif" font-size="28" font-weight="700" fill="#0B2545">Human</text>
+            <text x="115" y="143" text-anchor="middle" font-family="Inter,sans-serif" font-size="22" fill="#687280">Direction</text>
           </g>
 
-          <!-- Friendly AI Agents -->
-          <g transform="translate(512 42)">
-            <circle cx="105" cy="105" r="104" fill="url(#wfAgent)" stroke="#2A9D8F" stroke-width="2.5"/>
-            <g transform="translate(35 35)">
-              <rect x="43" y="18" width="55" height="47" rx="17" fill="#FAFAF8" stroke="#2A9D8F" stroke-width="3"/>
-              <circle cx="61" cy="40" r="5" fill="#2A9D8F"/><circle cx="80" cy="40" r="5" fill="#2A9D8F"/>
-              <path d="M61 52 Q70.5 59 80 52" fill="none" stroke="#0B2545" stroke-width="3" stroke-linecap="round"/>
-              <path d="M70 18 V8" stroke="#2A9D8F" stroke-width="3"/><circle cx="70" cy="5" r="4" fill="#7FD1C9"/>
-              <rect x="5" y="46" width="28" height="24" rx="9" fill="#FAFAF8" stroke="#7FD1C9" stroke-width="2"/>
-              <circle cx="14" cy="57" r="3" fill="#2A9D8F"/><circle cx="24" cy="57" r="3" fill="#2A9D8F"/>
-              <rect x="108" y="43" width="28" height="24" rx="9" fill="#FAFAF8" stroke="#7FD1C9" stroke-width="2"/>
-              <circle cx="117" cy="54" r="3" fill="#2A9D8F"/><circle cx="127" cy="54" r="3" fill="#2A9D8F"/>
-              <path d="M53 65 L48 83 M88 65 L93 83" stroke="#0B2545" stroke-width="4" stroke-linecap="round"/>
+          <!-- Friendly AI Agents / Execution -->
+          <g transform="translate(955 195)">
+            <circle cx="115" cy="115" r="113" fill="url(#agentBg)" stroke="#0B2545" stroke-width="3"/>
+            <g transform="translate(38 28)">
+              <rect x="47" y="20" width="60" height="50" rx="18" fill="#FAFAF8" stroke="#2A9D8F" stroke-width="3"/>
+              <circle cx="66" cy="43" r="5.5" fill="#2A9D8F"/><circle cx="88" cy="43" r="5.5" fill="#2A9D8F"/>
+              <path d="M66 56 Q77 64 88 56" fill="none" stroke="#0B2545" stroke-width="3" stroke-linecap="round"/>
+              <path d="M77 20 V9" stroke="#2A9D8F" stroke-width="3"/><circle cx="77" cy="6" r="4" fill="#7FD1C9"/>
+              <rect x="4" y="49" width="31" height="27" rx="10" fill="#FAFAF8" stroke="#7FD1C9" stroke-width="2.5"/>
+              <circle cx="14" cy="62" r="3" fill="#2A9D8F"/><circle cx="25" cy="62" r="3" fill="#2A9D8F"/>
+              <rect x="119" y="47" width="31" height="27" rx="10" fill="#FAFAF8" stroke="#7FD1C9" stroke-width="2.5"/>
+              <circle cx="129" cy="60" r="3" fill="#2A9D8F"/><circle cx="140" cy="60" r="3" fill="#2A9D8F"/>
+              <path d="M56 70 L51 91 M99 70 L104 91" stroke="#0B2545" stroke-width="4" stroke-linecap="round"/>
             </g>
-            <text x="105" y="192" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="#0B2545">AI AGENTS</text>
-            <text x="105" y="211" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#687280">Execution</text>
+            <text x="115" y="180" text-anchor="middle" font-family="Inter,sans-serif" font-size="26" font-weight="700" fill="#0B2545">AI Agents</text>
+            <text x="115" y="214" text-anchor="middle" font-family="Inter,sans-serif" font-size="22" fill="#687280">Execution</text>
           </g>
 
-          <!-- Data -->
-          <g transform="translate(185 448)">
-            <circle cx="95" cy="95" r="94" fill="#FAFAF8" stroke="#D9E1E2" stroke-width="2.5"/>
-            <path d="M30 112 C55 75 72 130 96 94 S138 74 160 103" fill="none" stroke="#7FD1C9" stroke-width="7" stroke-linecap="round"/>
-            <path d="M30 124 C57 94 75 132 99 108 S140 92 160 116" fill="none" stroke="#2A9D8F" stroke-width="3" stroke-linecap="round"/>
-            <text x="95" y="181" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="#0B2545">DATA</text>
-            <text x="95" y="200" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#687280">Context</text>
+          <!-- Data / Context -->
+          <g transform="translate(420 830)">
+            <circle cx="115" cy="115" r="113" fill="#FAFAF8" stroke="#D9E1E2" stroke-width="2.5"/>
+            <path d="M42 137 C78 85 104 160 132 111 S178 83 190 126" fill="none" stroke="#7FD1C9" stroke-width="10" stroke-linecap="round"/>
+            <path d="M42 155 C82 112 106 164 136 130 S180 109 192 144" fill="none" stroke="#2A9D8F" stroke-width="4" stroke-linecap="round"/>
+            <text x="115" y="184" text-anchor="middle" font-family="Inter,sans-serif" font-size="26" font-weight="700" fill="#0B2545">Data</text>
+            <text x="115" y="218" text-anchor="middle" font-family="Inter,sans-serif" font-size="22" fill="#687280">Context</text>
           </g>
 
-          <!-- Actions -->
-          <g transform="translate(480 400)">
-            <circle cx="95" cy="95" r="94" fill="url(#wfAction)" stroke="#D8C5B2" stroke-width="2.5"/>
-            <circle cx="133" cy="48" r="13" fill="#E8B873"/>
-            <path d="M48 124 C78 81 112 89 137 58" fill="none" stroke="#C6A47D" stroke-width="8" stroke-linecap="round"/>
-            <path d="M49 137 C80 104 112 109 140 78" fill="none" stroke="#F7CFA8" stroke-width="5" stroke-linecap="round"/>
-            <text x="95" y="181" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="#0B2545">ACTIONS</text>
-            <text x="95" y="200" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#687280">Impact</text>
+          <!-- Actions / Impact -->
+          <g transform="translate(835 660)">
+            <circle cx="115" cy="115" r="113" fill="url(#actionBg)" stroke="#D8C5B2" stroke-width="2.5"/>
+            <circle cx="163" cy="58" r="16" fill="#E8B873"/>
+            <path d="M54 150 C92 96 132 108 170 70" fill="none" stroke="#C6A47D" stroke-width="10" stroke-linecap="round"/>
+            <path d="M54 166 C94 125 134 132 173 94" fill="none" stroke="#F7CFA8" stroke-width="7" stroke-linecap="round"/>
+            <text x="115" y="184" text-anchor="middle" font-family="Inter,sans-serif" font-size="26" font-weight="700" fill="#0B2545">Actions</text>
+            <text x="115" y="218" text-anchor="middle" font-family="Inter,sans-serif" font-size="22" fill="#687280">Impact</text>
           </g>
 
-          <!-- Center message -->
-          <g transform="translate(380 325)">
-            <text x="0" y="-8" text-anchor="middle" font-family="Lora, serif" font-size="21" font-weight="700" fill="#0B2545">HUMANS SET THE DIRECTION.</text>
-            <text x="0" y="22" text-anchor="middle" font-family="Lora, serif" font-size="23" font-weight="700" fill="#2A9D8F">AGENTS DO THE WORK.</text>
-            <line x1="-35" y1="45" x2="35" y2="45" stroke="#7FD1C9"/>
-            <text x="0" y="68" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#687280">Humans in the hat. Agents at work.</text>
+          <!-- Core message -->
+          <g transform="translate(700 535)">
+            <text x="0" y="0" text-anchor="middle" font-family="Inter,sans-serif" font-size="21" letter-spacing="4" fill="#687280">PEOPLE SET THE DIRECTION.</text>
+            <text x="0" y="38" text-anchor="middle" font-family="Inter,sans-serif" font-size="22" font-weight="700" letter-spacing="2" fill="#0B2545">AGENTS MAKE IT HAPPEN.</text>
           </g>
         </svg>
       </div>
-    </section>   </section>
+    </section>   </section>   </section>
 
     <section id="what-we-do" class="section intro">
       <div class="section-heading">
